@@ -1,0 +1,51 @@
+@import url("reset.css");
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	position: relative;
+	height: 100%;
+	width: auto;
+	background: url(../img/login_bg.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.login-wrap {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.login-form-box {
+	padding: 25px 30px;
+	background-color: #FFFFFF;
+	color: #565656;
+}
+
+.login-title {
+	margin-bottom: 38px;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.checkbox {
+	padding-left: 2px;
+}
+
+.login a {
+	float: right;
+	color: #cf1736;
+}
+
+.login a.btn {
+	color: #ffffff;
+}
+
+.form-group:last-child {
+	margin: 10px 0;
+}

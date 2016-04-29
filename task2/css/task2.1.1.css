@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+/*外容器*/
+.container {
+	width: 306px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.container div{
+	float: left;
+	width: 100px;
+	height: 100px;
+	box-shadow: 0 0 5px 2px #A6A4A8;
+}
+/*第1个div*/
+.container div:nth-child(1){
+	background-color: #A23F3F;
+}
+/*第2个div*/
+.container div:nth-child(2){
+	background-color: #7C8EDD;
+}
+/*第3个div*/
+.container div:nth-child(3){
+	margin: 3px;
+	background-color: #D7E1CF;
+	line-height: 110px;
+	text-align: center;
+}
+/*第4个div*/
+.container div:nth-child(4){
+	background-color: #DD7CD2;
+}
+/*第5个div*/
+.container div:nth-child(5){
+	background-color: #528A35;
+}
+.container div:nth-child(1),
+.container div:nth-child(5){
+	margin: 0 103px;
+}
+.container div:nth-child(2),
+.container div:nth-child(4){
+	margin-top: 3px;
+}

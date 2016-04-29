@@ -1,0 +1,116 @@
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* 设置默认字体 */
+body,
+button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li{
+    margin: 0;
+    padding: 0;
+}
+a { text-decoration: none; }
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:after {
+	display: table;
+	content: "";
+	line-height: 0;
+	clear: both;
+}
+
+body{
+	background: url(../img/beijing.gif) repeat;
+	font-size: 12px;
+}
+/* 外容器 */
+.container{
+	width: 710px;
+	margin: 10px auto;
+	padding: 5px 20px 30px 20px;
+	border-radius: 20px;
+	background-color: #ffffff;
+}
+/* 头部 */
+header{
+	margin-bottom: 30px;
+}
+header .left{
+	float: left;
+	width: 180px;
+	height: 76px;
+}
+header .left img{
+	width: 180px;
+}
+header .right{
+	float: right;
+	margin-top: 63px;
+}
+header .right a{
+	display: block;
+	float: left;
+	margin-left: 10px;
+	color: rgb(255, 0, 153);
+}
+article table{
+	width: 100%;
+	border: 1px solid grey;
+	border-collapse:collapse;
+	border-spacing: 2px;
+}
+article td{
+	line-height: 150%;
+	border: 1px solid grey;
+	vertical-align: middle;
+}
+article table caption{
+	font-size: 18px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.red{
+	color: red;
+}
+.blue{
+	color: rgb(0, 0, 255);
+}
+input[type=text],
+input[type=email]{
+	display: inline-block;
+	padding: 1px 0;
+	height: 20px;
+}
+input[type=text]{
+	box-sizing: border-box;
+	padding-left: 5px;
+}
+select{
+	height: 18px;
+}
+textarea {
+    padding: 2px 0px 0px 2px;
+}
+tr:last-child{
+	height: 100px;
+}
+input[type=submit]{
+	height: 20px;
+	width: 80px;
+}
+fieldset input[type=checkbox]{
+	vertical-align: top;
+}
+footer{
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+}

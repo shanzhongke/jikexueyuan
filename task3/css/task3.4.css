@@ -1,0 +1,70 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+/*案例1*/
+.container{
+	background-color: #000000;
+	overflow: hidden;
+}
+.container .middle{
+	float: left;
+	width: 100%;
+	min-height: 30px;
+	background-color: #418587;
+}
+.container .middle .main{
+	margin: 0 300px;
+}
+.container .left,.container .right{
+	width: 300px;
+	min-height: 30px;
+	float: left;
+}
+.container .middle,
+.container .left,
+.container .right{
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+}
+.container .left{
+	margin-left: -100%;
+	background-color: rgb(149, 155, 64);
+}
+.container .right{
+	margin-left: -300px;
+	background-color: rgb(127, 64, 155);
+}
+/*案例2*/
+.container2{
+	background-color: #000000;
+	overflow: hidden;
+}
+.container2 .middle{
+	float: left;
+	width: 100%;
+	min-height: 30px;
+	padding: 0 300px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #418587;
+}
+.container2 .left,.container2 .right{
+	width: 300px;
+	min-height: 30px;
+	float: left;
+}
+.container2 .middle,
+.container2 .left,
+.container2 .right{
+	padding-bottom: 2000px;
+	margin-bottom: -2000px;
+}
+.container2 .left{
+	margin-left: -100%;
+	background-color: rgb(149, 155, 64);
+}
+.container2 .right{
+	margin-left: -300px;
+	background-color: rgb(127, 64, 155);
+}

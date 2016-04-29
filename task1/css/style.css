@@ -1,0 +1,169 @@
+@import url("reset.css");
+/*清除浮动*/
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:after {
+	display: table;
+	content: "";
+	line-height: 0;
+	clear: both;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+.container{
+	height: 100%;
+	min-height: 600px;
+	min-width: 800px;
+	position: relative;
+}
+/*头部样式*/
+header{
+	min-width: 1000px;
+}
+.topNav {
+	border-bottom: 1px solid #ebebeb;
+}
+
+.topNav_left {
+	float: left;
+}
+
+.topNav_left li,
+.topNav_right li {
+	margin-left: 15px;
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+
+.topNav_left li,
+.topNav_left li a,
+.topNav_right li a {
+	color: #555;
+	font: 12px/32px arial;
+}
+
+.topNav_left li:nth-of-type(2) {
+	padding-left: 23px;
+	margin-left: 0;
+}
+
+.topNav_left li:nth-of-type(2) {
+	background: url(../img/a1.png) left center no-repeat;
+}
+
+.topNav_left li:nth-of-type(3) em {
+	color: #38f;
+	font-weight: bold;
+	margin-right: 7px;
+}
+
+.topNav_left li:nth-of-type(2) a,
+.topNav_left li:nth-of-type(3) a {
+	text-decoration: none;
+}
+
+.topNav_right {
+	float: right;
+}
+
+.topNav_right li:nth-of-type(1) a,
+.topNav_right li:nth-of-type(2) a,
+.topNav_right li:nth-of-type(3) a,
+.topNav_right li:nth-of-type(4) a,
+.topNav_right li:nth-of-type(5) a,
+.topNav_right li:nth-of-type(6) a {
+	font-weight: bold;
+}
+
+.topNav_right li:last-of-type {
+	width: 86px;
+	background: #398bfb;
+	text-align: center;
+	font-size: 13px;
+	color: white;
+	cursor: default;
+}
+/*主体样式*/
+.main {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.main_content {
+	margin-top: 98px;
+	width: 1000px;
+}
+
+.main_content .banner {
+	height: 150px;
+	text-align: center;
+}
+
+.main .select {
+	width: 641px;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.main .input_select {
+	width: 520px;
+	height: 20px;
+	padding: 9px 7px;
+	border: 1px solid #b8b8b8;
+	border-right: 0;
+	font: 16px arial;
+	vertical-align: top;
+}
+
+.main .input_select:hover {
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #b3b3b3;
+}
+
+.main .input_select:focus {
+	outline: none;
+	border-color: #38f;
+}
+
+.main .btn_select {
+	height: 40px;
+	line-height: 38px;
+	width: 102px;
+	background-color: #38f;
+	text-align: center;
+	font-size: 16px;
+	padding: 0;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	margin: 0;
+	*margin: 1px 0 0 -1px;
+}
+.main .btn_select:hover{
+    background-color: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    border: 0\9;
+    box-shadow: 1px 1px 1px #ccc;
+}
+/*底部样式*/
+.foot{
+	width: 100%;
+	position: absolute;
+	bottom: 15px;
+	text-align: center;
+}
+.foot,
+.foot a{
+	color: #999;
+}
+.foot >a{
+	color: #000;
+}

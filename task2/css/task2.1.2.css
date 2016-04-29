@@ -1,0 +1,48 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+/*外容器*/
+.container {
+	width: 306px;
+	height: 306px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.container > div {
+	float: left;
+	width: 100px;
+	height: 100px;
+	box-shadow: 0 0 5px 2px #A6A4A8;
+}
+/*第1个div*/
+.d1 {
+	margin: 103px 3px 0 0;
+	background-color: #A23F3F;
+}
+/*第2个div*/
+.d2 {
+	background-color: #7C8EDD;
+}
+/*第3个div*/
+.d3 {
+	margin: 103px 0 0 3px;
+	background-color: #DD7CD2;
+}
+/*第4个div*/
+.d4{
+	position: relative;
+	top: -100px;
+	right: -103px;
+	background: #D7E1CF url(../img/stars_24px_1197754_easyicon.net.png) no-repeat center;
+}
+/*第5个div*/
+.d5{
+	margin: 3px 0 0 3px;
+	background-color: #528A35;
+}
