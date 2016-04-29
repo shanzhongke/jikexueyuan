@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>百度一下</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/task7.1.css" />
+		<link rel="stylesheet" type="text/css" href="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/css/nav/init_4a20c854.css">
+		<link rel="stylesheet" type="text/css" href="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/css/shopping/init_e2526dd4.css">
+		<link rel="stylesheet" type="text/css" href="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/css/video/init_514beded.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<!--pc端导航栏-->
+			<header class="cf">
+				<!--头部左侧工具栏-->
+				<div class="header_tool cf">
+					<div class="weather-wrap">
+						<a class="city-wather" href="//www.baidu.com/s?tn=baidutop10&amp;rsv_idx=2&amp;wd=%E5%8C%97%E4%BA%AC%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5" target="_blank">
+							<div class="show-weather">
+								<span class="show-city">
+									<em class="show-city-name"> 北京： </em>
+								</span>
+								<span class="show-icon">
+									<span class="weather-icon" style="background-image:url(https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/weather/aladdin/png_18/a0_night.png);"></span>
+								<em class="show-icon-temp">4℃</em>
+								</span>
+							</div>
+							<div class="show-pollution ">
+								<span class="show-airParm polution-level-30">
+									<em class="show-polution-name">中度</em>
+									<em class="show-polution-num">194</em></span>
+								<span class="show-vertical">|</span>
+							</div>
+						</a>
+					</div>
+					<div class="s-icons">
+						<a class="s-treasure" href="#" title="宝箱">
+							<span class="title">宝箱</span>
+						</a>
+						<a class="s-skin" href="#" title="换肤">
+							<span class="title">换肤</span>
+						</a>
+						<a class="s-msg" href="#" title="消息">
+							<span class="title">消息</span>
+						</a>
+					</div>
+					<!--换肤框-->
+					<div id="skin-wrap">
+						<div class="skin">
+							<ul>
+								<li class="skin_style">
+									<a href="javascript:;">
+										<img class="skin-img-item-img" src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/skin_plus/745.jpg?2" />
+									</a>
+								</li>
+								<li class="skin_style">
+									<a href="javascript:;">
+										<img class="skin-img-item-img" src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/skin_plus/635.jpg?2" />
+									</a>
+								</li>
+								<li class="skin_style skin-default">
+									<a href="javascript:;">
+										默认
+									</a>
+								</li>
+							</ul>
+							<button id="skin_btn">换肤</button>
+							<button id="slide_btn">收起</button>
+						</div>
+					</div>
+				</div>
+				<!--头部右侧导航栏-->
+				<div class="header_nav">
+					<ul>
+						<li><a href="#">糯米</a></li>
+						<li><a href="#">新闻</a></li>
+						<li><a href="#">hao123</a></li>
+						<li><a href="#">地图</a></li>
+						<li><a href="#">视频</a></li>
+						<li><a href="#">贴吧</a></li>
+						<li><a href="#">用户名</a></li>
+						<li><a href="#">设置</a></li>
+						<li id="aside_btn"><a href="#">更多产品</a></li>
+					</ul>
+					<!--隐藏侧边导航栏-->
+					<div class="aside_nav">
+						<div class="aside">
+							<div class="aside_title">更多产品</div>
+							<div class="aside_content">
+								<a href="http://music.baidu.com" target="_blank"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/music.png?v=md5">音乐</a>
+								<a href="http://image.baidu.com" target="_blank"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/image.png?v=md5">图片</a>
+								<a href="http://zhidao.baidu.com" target="_blank"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/zhidao.png?v=md5">知道</a>
+								<a href="http://wenku.baidu.com" target="_blank"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/wenku.png?v=md5">文库</a>
+								<a href="http://top.baidu.com" target="_blank"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/bang.png?v=md5">风云榜</a>
+								<a href="http://e.baidu.com/" target="_blank"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/tuiguang.png?v=md5">百度推广</a>
+								<div class="s_bdbrievenmore"><a href="http://www.baidu.com/more/" target="_blank">全部产品&gt;&gt;</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<article>
+				<div class="main">
+					<div class="lg">
+						<div class="img"></div>
+					</div>
+					<!--搜索框-->
+					<form id="form">
+						<div class="input_bar">
+							<input autofocus="autofocus" type="text" id="select" />
+							<input type="submit" id="submit" value="百度一下" />
+						</div>
+					</form>
+				</div>
+			</article>
+			<div class="s_wrap">
+				<div class="s_main">
+					<div class="s_menu_container cf">
+						<div id="s_menus_wrapper" class="menus-wrapper">
+							<span class="s-menu-item s-opacity-white-background current" data-id="2">推荐</span>
+							<span class="s-menu-item s-opacity-white-background" data-id="1">导航</span>
+							<span class="s-menu-item s-opacity-white-background" data-id="15">视频</span>
+							<span class="s-menu-item s-opacity-white-background" data-id="5">购物</span>
+							<div class="s-bg-space s-opacity-white-background"></div>
+						</div>
+						<span class="s-menu-setting s-opacity-white-background" title="设置"><div class="menu-icon"></div></span>
+					</div>
+					<div class="s-ctner-contents">
+						<div id="s_content_2">
+							<div data-curtab="" id="s_xmancard_news" data-logactid="page-card-tpl-news" class="s-xmancard-news s-xmancard s-news-split" data-waterpara="offset=1;p_params=31415926;newsNum=3;">
+								<link rel="stylesheet" type="text/css" href="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/css/news/init_3d97e52f.css">
+								<div class="s-news-wrapper clearfix">
+									<div class="s-news-rank-wrapper">
+										<div class="s-rank-title s-opacity-border1-bottom">
+											<div class="title-text"><a href="http://top.baidu.com/?fr=mhd_card" target="_blank">实时热点</a></div>
+											<a class="hot-refresh"> <span class="hot-refresh-icon"></span><span class="hot-refresh-text">换一换</span></a>
+										</div>
+										<ul class="s-news-rank-content">
+											<li class="news-meta-item news-artist" data-index="0"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E8%99%90%E7%AB%A5%E6%A1%88%E5%85%BB%E6%AF%8D%E5%87%BA%E7%8B%B1&amp;rsv_idx=2" target="_blank">虐童案养母出狱</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item news-artist" data-index="1"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%BE%90%E4%BD%B3%E8%8E%B9%E6%AD%8C%E6%89%8B4%E5%9E%AB%E5%BA%95&amp;rsv_idx=2" target="_blank">徐佳莹歌手4垫底</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item news-artist" data-index="2"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%8F%99%E6%88%98%E6%9C%BA%E8%A2%AB%E5%87%BB%E8%90%BD&amp;rsv_idx=2" target="_blank">叙战机被击落</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item news-artist" data-index="3"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E4%B8%80%E5%85%83%E7%BA%B8%E5%B8%81%E9%80%80%E5%87%BA%E5%B8%82%E5%9C%BA&amp;rsv_idx=2" target="_blank">一元纸币退出市场</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="4"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=14%E5%B2%81%E5%A5%B3%E5%A4%B1%E8%81%944%E5%A4%A9&amp;rsv_idx=2" target="_blank">14岁女失联4天</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="5"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E9%AB%98%E4%BA%8C%E7%94%B7%E7%94%9F%E8%B7%B3%E6%A5%BC%E8%BA%AB%E4%BA%A1&amp;rsv_idx=2" target="_blank">高二男生跳楼身亡</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="6"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E8%B0%A2%E9%9C%86%E9%94%8B%E5%A4%B1%E6%8E%A7%E5%8F%91%E9%A3%99&amp;rsv_idx=2" target="_blank">谢霆锋失控发飙</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="7"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E8%BD%A6%E4%B8%BB%E5%BC%80%E8%BD%A6%E6%92%9E4S%E5%BA%97&amp;rsv_idx=2" target="_blank">车主开车撞4S店</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="8"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%AF%8C%E4%BA%8C%E4%BB%A3%E7%9C%9F%E4%BA%BA%E7%A7%80%E7%82%AB%E5%AF%8C&amp;rsv_idx=2" target="_blank">富二代真人秀炫富</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="9"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E6%96%B0iphone%E6%88%96%E5%8F%91%E5%B8%83&amp;rsv_idx=2" target="_blank">新iphone或发布</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="10"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E7%8E%8B%E6%80%9D%E8%81%AA%E9%9B%AA%E6%A2%A8%E5%90%83%E7%81%AB%E9%94%85&amp;rsv_idx=2" target="_blank">王思聪雪梨吃火锅</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="11"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%A5%B3%E5%AD%90%E6%9D%80%E9%B8%A1%E5%8F%91%E7%8E%B0%E9%B8%A1%E5%AE%9D&amp;rsv_idx=2" target="_blank">女子杀鸡发现鸡宝</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="12"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E4%B9%B0%E5%BA%8A%E5%9E%AB8%E5%B9%B4%E7%9D%A1%E6%88%90%E6%B8%A3&amp;rsv_idx=2" target="_blank">买床垫8年睡成渣</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="13"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E7%BD%95%E8%A7%81%E7%B2%89%E7%BA%A2%E8%89%B2%E5%B9%BC%E8%B1%A1&amp;rsv_idx=2" target="_blank">罕见粉红色幼象</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="14"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E7%A7%A6%E6%98%8A%E5%86%8D%E8%8E%B7%E5%BD%B1%E5%B8%9D&amp;rsv_idx=2" target="_blank">秦昊再获影帝</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+											<li class="news-meta-item" data-index="15"><em class="news-icon"></em><span class="news-title"><span class="title-link"><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%90%B4%E6%98%95%E8%A7%81%E5%81%B6%E5%83%8F%E7%97%9B%E5%93%AD&amp;rsv_idx=2" target="_blank">吴昕见偶像痛哭</a><span class="new-identity"></span></span>
+												</span>
+											</li>
+										</ul>
+									</div>
+									<textarea id="news_hot_data" style="display:none;">{"banner":[{"title": "虐童案养母出狱","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E8%2599%2590%25E7%25AB%25A5%25E6%25A1%2588%25E5%2585%25BB%25E6%25AF%258D%25E5%2587%25BA%25E7%258B%25B1%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "1","count": "139080"},{"title": "徐佳莹歌手4垫底","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25BE%2590%25E4%25BD%25B3%25E8%258E%25B9%25E6%25AD%258C%25E6%2589%258B4%25E5%259E%25AB%25E5%25BA%2595%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "1","count": "383751"},{"title": "叙战机被击落","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%258F%2599%25E6%2588%2598%25E6%259C%25BA%25E8%25A2%25AB%25E5%2587%25BB%25E8%2590%25BD%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "1","count": "181536"},{"title": "一元纸币退出市场","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E4%25B8%2580%25E5%2585%2583%25E7%25BA%25B8%25E5%25B8%2581%25E9%2580%2580%25E5%2587%25BA%25E5%25B8%2582%25E5%259C%25BA%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "1","count": "243085"},{"title": "14岁女失联4天","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D14%25E5%25B2%2581%25E5%25A5%25B3%25E5%25A4%25B1%25E8%2581%25944%25E5%25A4%25A9%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "260165"},{"title": "高二男生跳楼身亡","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E9%25AB%2598%25E4%25BA%258C%25E7%2594%25B7%25E7%2594%259F%25E8%25B7%25B3%25E6%25A5%25BC%25E8%25BA%25AB%25E4%25BA%25A1%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "341173"},{"title": "谢霆锋失控发飙","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E8%25B0%25A2%25E9%259C%2586%25E9%2594%258B%25E5%25A4%25B1%25E6%258E%25A7%25E5%258F%2591%25E9%25A3%2599%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "305427"},{"title": "车主开车撞4S店","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E8%25BD%25A6%25E4%25B8%25BB%25E5%25BC%2580%25E8%25BD%25A6%25E6%2592%259E4S%25E5%25BA%2597%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "282186"},{"title": "富二代真人秀炫富","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25AF%258C%25E4%25BA%258C%25E4%25BB%25A3%25E7%259C%259F%25E4%25BA%25BA%25E7%25A7%2580%25E7%2582%25AB%25E5%25AF%258C%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "29524"},{"title": "新iphone或发布","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%2596%25B0iphone%25E6%2588%2596%25E5%258F%2591%25E5%25B8%2583%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "57828"},{"title": "王思聪雪梨吃火锅","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E7%258E%258B%25E6%2580%259D%25E8%2581%25AA%25E9%259B%25AA%25E6%25A2%25A8%25E5%2590%2583%25E7%2581%25AB%25E9%2594%2585%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "12566"},{"title": "女子杀鸡发现鸡宝","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25A5%25B3%25E5%25AD%2590%25E6%259D%2580%25E9%25B8%25A1%25E5%258F%2591%25E7%258E%25B0%25E9%25B8%25A1%25E5%25AE%259D%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "18361"},{"title": "买床垫8年睡成渣","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E4%25B9%25B0%25E5%25BA%258A%25E5%259E%25AB8%25E5%25B9%25B4%25E7%259D%25A1%25E6%2588%2590%25E6%25B8%25A3%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "28792"},{"title": "罕见粉红色幼象","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E7%25BD%2595%25E8%25A7%2581%25E7%25B2%2589%25E7%25BA%25A2%25E8%2589%25B2%25E5%25B9%25BC%25E8%25B1%25A1%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "27877"},{"title": "秦昊再获影帝","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E7%25A7%25A6%25E6%2598%258A%25E5%2586%258D%25E8%258E%25B7%25E5%25BD%25B1%25E5%25B8%259D%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "2196"},{"title": "吴昕见偶像痛哭","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%2590%25B4%25E6%2598%2595%25E8%25A7%2581%25E5%2581%25B6%25E5%2583%258F%25E7%2597%259B%25E5%2593%25AD%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "506117"},{"title": "1.6万卖掉女儿","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D1.6%25E4%25B8%2587%25E5%258D%2596%25E6%258E%2589%25E5%25A5%25B3%25E5%2584%25BF%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "11041"},{"title": "周小川谈房贷","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%2591%25A8%25E5%25B0%258F%25E5%25B7%259D%25E8%25B0%2588%25E6%2588%25BF%25E8%25B4%25B7%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "102907"},{"title": "遭绑架喊爸爸获救","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E9%2581%25AD%25E7%25BB%2591%25E6%259E%25B6%25E5%2596%258A%25E7%2588%25B8%25E7%2588%25B8%25E8%258E%25B7%25E6%2595%2591%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "14518"},{"title": "商场试衣镜能瘦身","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%2595%2586%25E5%259C%25BA%25E8%25AF%2595%25E8%25A1%25A3%25E9%2595%259C%25E8%2583%25BD%25E7%2598%25A6%25E8%25BA%25AB%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "40443"},{"title": "不满儿子受欺投毒","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E4%25B8%258D%25E6%25BB%25A1%25E5%2584%25BF%25E5%25AD%2590%25E5%258F%2597%25E6%25AC%25BA%25E6%258A%2595%25E6%25AF%2592%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "722728"},{"title": "酒驾撞死3名学生","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E9%2585%2592%25E9%25A9%25BE%25E6%2592%259E%25E6%25AD%25BB3%25E5%2590%258D%25E5%25AD%25A6%25E7%2594%259F%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "3039630"},{"title": "世界第二高楼完工","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E4%25B8%2596%25E7%2595%258C%25E7%25AC%25AC%25E4%25BA%258C%25E9%25AB%2598%25E6%25A5%25BC%25E5%25AE%258C%25E5%25B7%25A5%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "16531"},{"title": "杜海涛自曝有女友","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%259D%259C%25E6%25B5%25B7%25E6%25B6%259B%25E8%2587%25AA%25E6%259B%259D%25E6%259C%2589%25E5%25A5%25B3%25E5%258F%258B%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "74359"},{"title": "全球生活成本排名","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%2585%25A8%25E7%2590%2583%25E7%2594%259F%25E6%25B4%25BB%25E6%2588%2590%25E6%259C%25AC%25E6%258E%2592%25E5%2590%258D%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "11285"},{"title": "捡手机送派出所","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%258D%25A1%25E6%2589%258B%25E6%259C%25BA%25E9%2580%2581%25E6%25B4%25BE%25E5%2587%25BA%25E6%2589%2580%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "196786"},{"title": "小伙造出大黄蜂","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25B0%258F%25E4%25BC%2599%25E9%2580%25A0%25E5%2587%25BA%25E5%25A4%25A7%25E9%25BB%2584%25E8%259C%2582%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "14152"},{"title": "全球房价最贵城市","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%2585%25A8%25E7%2590%2583%25E6%2588%25BF%25E4%25BB%25B7%25E6%259C%2580%25E8%25B4%25B5%25E5%259F%258E%25E5%25B8%2582%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "3782"},{"title": "宋仲基妹妹曝光","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25AE%258B%25E4%25BB%25B2%25E5%259F%25BA%25E5%25A6%25B9%25E5%25A6%25B9%25E6%259B%259D%25E5%2585%2589%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "37454"},{"title": "李小璐练舞玩劈叉","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%259D%258E%25E5%25B0%258F%25E7%2592%2590%25E7%25BB%2583%25E8%2588%259E%25E7%258E%25A9%25E5%258A%2588%25E5%258F%2589%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "8296"},{"title": "狗熊30年没冬眠","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E7%258B%2597%25E7%2586%258A30%25E5%25B9%25B4%25E6%25B2%25A1%25E5%2586%25AC%25E7%259C%25A0%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "9211"},{"title": "去世女子电视寻亲","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%258E%25BB%25E4%25B8%2596%25E5%25A5%25B3%25E5%25AD%2590%25E7%2594%25B5%25E8%25A7%2586%25E5%25AF%25BB%25E4%25BA%25B2%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "9516"},{"title": "男孩照顾失明父亲","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E7%2594%25B7%25E5%25AD%25A9%25E7%2585%25A7%25E9%25A1%25BE%25E5%25A4%25B1%25E6%2598%258E%25E7%2588%25B6%25E4%25BA%25B2%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "358314"},{"title": "女孩怪病七窍流血","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25A5%25B3%25E5%25AD%25A9%25E6%2580%25AA%25E7%2597%2585%25E4%25B8%2583%25E7%25AA%258D%25E6%25B5%2581%25E8%25A1%2580%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "5063"},{"title": "牧马人怒撞高尔夫","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E7%2589%25A7%25E9%25A9%25AC%25E4%25BA%25BA%25E6%2580%2592%25E6%2592%259E%25E9%25AB%2598%25E5%25B0%2594%25E5%25A4%25AB%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "6527"},{"title": "韩庚告白陈坤","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E9%259F%25A9%25E5%25BA%259A%25E5%2591%258A%25E7%2599%25BD%25E9%2599%2588%25E5%259D%25A4%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "3416"},{"title": "报警求结束恋情","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%258A%25A5%25E8%25AD%25A6%25E6%25B1%2582%25E7%25BB%2593%25E6%259D%259F%25E6%2581%258B%25E6%2583%2585%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "5856"},{"title": "委员花38万买表","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25A7%2594%25E5%2591%2598%25E8%258A%25B138%25E4%25B8%2587%25E4%25B9%25B0%25E8%25A1%25A8%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "3904"},{"title": "蜜蜂群攻狮子败走","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E8%259C%259C%25E8%259C%2582%25E7%25BE%25A4%25E6%2594%25BB%25E7%258B%25AE%25E5%25AD%2590%25E8%25B4%25A5%25E8%25B5%25B0%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "3355"},{"title": "熊黛林报喜将出嫁","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E7%2586%258A%25E9%25BB%259B%25E6%259E%2597%25E6%258A%25A5%25E5%2596%259C%25E5%25B0%2586%25E5%2587%25BA%25E5%25AB%2581%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "14457"},{"title": "文章执导新剧","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%2596%2587%25E7%25AB%25A0%25E6%2589%25A7%25E5%25AF%25BC%25E6%2596%25B0%25E5%2589%25A7%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "219844"},{"title": "砸锁进店吃火锅","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E7%25A0%25B8%25E9%2594%2581%25E8%25BF%259B%25E5%25BA%2597%25E5%2590%2583%25E7%2581%25AB%25E9%2594%2585%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "4453"},{"title": "陈冲女儿近照曝光","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E9%2599%2588%25E5%2586%25B2%25E5%25A5%25B3%25E5%2584%25BF%25E8%25BF%2591%25E7%2585%25A7%25E6%259B%259D%25E5%2585%2589%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "4575"},{"title": "何洁晒儿子萌照","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E4%25BD%2595%25E6%25B4%2581%25E6%2599%2592%25E5%2584%25BF%25E5%25AD%2590%25E8%2590%258C%25E7%2585%25A7%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "49349"},{"title": "患怪病手脚像树根","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%2582%25A3%25E6%2580%25AA%25E7%2597%2585%25E6%2589%258B%25E8%2584%259A%25E5%2583%258F%25E6%25A0%2591%25E6%25A0%25B9%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "18178"},{"title": "运城4.4级地震","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E8%25BF%2590%25E5%259F%258E4.4%25E7%25BA%25A7%25E5%259C%25B0%25E9%259C%2587%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "11712"},{"title": "林心如为赵薇庆生","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%259E%2597%25E5%25BF%2583%25E5%25A6%2582%25E4%25B8%25BA%25E8%25B5%25B5%25E8%2596%2587%25E5%25BA%2586%25E7%2594%259F%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "8418"},{"title": "北京试点拆围墙","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%258C%2597%25E4%25BA%25AC%25E8%25AF%2595%25E7%2582%25B9%25E6%258B%2586%25E5%259B%25B4%25E5%25A2%2599%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "3538"},{"title": "刘诗诗秀婚戒","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%2588%2598%25E8%25AF%2597%25E8%25AF%2597%25E7%25A7%2580%25E5%25A9%259A%25E6%2588%2592%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "4392"},{"title": "男女共享育儿假","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E7%2594%25B7%25E5%25A5%25B3%25E5%2585%25B1%25E4%25BA%25AB%25E8%2582%25B2%25E5%2584%25BF%25E5%2581%2587%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "7076"},{"title": "深足主帅避谈冲超","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%25B7%25B1%25E8%25B6%25B3%25E4%25B8%25BB%25E5%25B8%2585%25E9%2581%25BF%25E8%25B0%2588%25E5%2586%25B2%25E8%25B6%2585%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "3455101"},{"title": "患者去世家属袭警","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%2582%25A3%25E8%2580%2585%25E5%258E%25BB%25E4%25B8%2596%25E5%25AE%25B6%25E5%25B1%259E%25E8%25A2%25AD%25E8%25AD%25A6%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "7991"},{"title": "张翰首当制片","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25BC%25A0%25E7%25BF%25B0%25E9%25A6%2596%25E5%25BD%2593%25E5%2588%25B6%25E7%2589%2587%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "3416"},{"title": "安宰贤具惠善恋情","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25AE%2589%25E5%25AE%25B0%25E8%25B4%25A4%25E5%2585%25B7%25E6%2583%25A0%25E5%2596%2584%25E6%2581%258B%25E6%2583%2585%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "9638"},{"title": "贵州地面塌陷","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E8%25B4%25B5%25E5%25B7%259E%25E5%259C%25B0%25E9%259D%25A2%25E5%25A1%258C%25E9%2599%25B7%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "323300"},{"title": "撞飞摩托车逃逸","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%2592%259E%25E9%25A3%259E%25E6%2591%25A9%25E6%2589%2598%25E8%25BD%25A6%25E9%2580%2583%25E9%2580%25B8%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "146522"},{"title": "刘士余记者会","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%2588%2598%25E5%25A3%25AB%25E4%25BD%2599%25E8%25AE%25B0%25E8%2580%2585%25E4%25BC%259A%26rsv_idx%3D2","views":
+										"","isViewed": "0","isNew": "0","count": "10309"},{"title": "小卖部拍173万","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25B0%258F%25E5%258D%2596%25E9%2583%25A8%25E6%258B%258D173%25E4%25B8%2587%26rsv_idx%3D2","views":
+										"","isViewed": "1","isNew": "0","count": "146217"},{"title": "尸检男子突坐起","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25B0%25B8%25E6%25A3%2580%25E7%2594%25B7%25E5%25AD%2590%25E7%25AA%2581%25E5%259D%2590%25E8%25B5%25B7%26rsv_idx%3D2","views":
+										"","isViewed": "1","isNew": "0","count": "202642"},{"title": "上海外滩图走红","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E4%25B8%258A%25E6%25B5%25B7%25E5%25A4%2596%25E6%25BB%25A9%25E5%259B%25BE%25E8%25B5%25B0%25E7%25BA%25A2%26rsv_idx%3D2","views":
+										"","isViewed": "1","isNew": "0","count": "171227"},{"title": "进山途中救座山雕","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E8%25BF%259B%25E5%25B1%25B1%25E9%2580%2594%25E4%25B8%25AD%25E6%2595%2591%25E5%25BA%25A7%25E5%25B1%25B1%25E9%259B%2595%26rsv_idx%3D2","views":
+										"","isViewed": "1","isNew": "0","count": "47519"},{"title": "中国有4成直男癌","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E4%25B8%25AD%25E5%259B%25BD%25E6%259C%25894%25E6%2588%2590%25E7%259B%25B4%25E7%2594%25B7%25E7%2599%258C%26rsv_idx%3D2","views":
+										"","isViewed": "1","isNew": "0","count": "151524"},{"title": "蝙蝠侠赞中国火锅","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E8%259D%2599%25E8%259D%25A0%25E4%25BE%25A0%25E8%25B5%259E%25E4%25B8%25AD%25E5%259B%25BD%25E7%2581%25AB%25E9%2594%2585%26rsv_idx%3D2","views":
+										"","isViewed": "1","isNew": "0","count": "94733"},{"title": "大叔体内钓出虾","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25A4%25A7%25E5%258F%2594%25E4%25BD%2593%25E5%2586%2585%25E9%2592%2593%25E5%2587%25BA%25E8%2599%25BE%26rsv_idx%3D2","views":
+										"","isViewed": "1","isNew": "0","count": "160064"},{"title": "存款2000万被捕","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E5%25AD%2598%25E6%25AC%25BE2000%25E4%25B8%2587%25E8%25A2%25AB%25E6%258D%2595%26rsv_idx%3D2","views":
+										"","isViewed": "1","isNew": "0","count": "25132"},{"title": "最帅囚犯出狱","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D%25E6%259C%2580%25E5%25B8%2585%25E5%259B%259A%25E7%258A%25AF%25E5%2587%25BA%25E7%258B%25B1%26rsv_idx%3D2","views":
+										"","isViewed": "1","isNew": "0","count": "13847"},{"title": "2016考研国家线","url": "https%3A//www.baidu.com/s%3Fcl%3D3%26tn%3Dbaidutop10%26fr%3Dtop1000%26wd%3D2016%25E8%2580%2583%25E7%25A0%2594%25E5%259B%25BD%25E5%25AE%25B6%25E7%25BA%25BF%26rsv_idx%3D2","views":
+										"","isViewed": "1","isNew": "0","count": "11834"}]}</textarea>
+									<textarea id="news_banner_data" style="display:none;">{"isViewed": "0","url": "","img": "","title": "","bannerId": ""}</textarea>
+									<div class="news-flash-tips">
+										<div class="left-line s-opacity-blank8"></div>
+										<div class="tips-content">
+											<div class="tips-icon"></div><span>以下信息根据您的兴趣推荐</span> </div>
+										<div class="right-line s-opacity-blank8"></div>
+									</div>
+									<div class="water-container">
+										<div class="s-news-list-wrapper">
+											<div class="s-news-item s-news-item-tpl-3 s-opacity-blank8 first" data-rid="6240309252960470632" data-relatewords="1" data-log="stype:0;picNum:0;">
+												<h2>  <span class="status prefix-0"></span> <a href="http://news.sohu.com/20160313/n440249039.shtml" title="支持者与反对者起冲突 特朗普临时取消竞选集会" target="_blank" data-title="支持者与反对者起冲突 特朗普临时取消竞选集会" data-link="http://news.sohu.com/20160313/n440249039.shtml" data-click="LOG_LINK" class="s-yahei"> 支持者与反对者起冲突 特朗普临时取消竞选集会</a><a href="javascript:;" class="del"></a></h2>
+												<div class="from"><span class="src-net"><a href="http://news.sohu.com" target="_blank" data-src="1" data-click="LOG_LINK">搜狐新闻</a></span><span class="src-time">03-13 09:49</span> </div>
+												<div class="dustbin" data-click="LOG_BTN_DUSTBIN"> </div>
+											</div>
+											<div class="s-news-item s-news-item-tpl-3 s-opacity-blank8" data-rid="11528561574906548466" data-relatewords="1" data-log="stype:0;picNum:0;">
+												<h2>  <span class="status prefix-0"></span> <a href="http://news.qq.com/a/20160312/043681.htm" title="甘肃男子酒后驾车撞死3名中学生 已被警方控制" target="_blank" data-title="甘肃男子酒后驾车撞死3名中学生 已被警方控制" data-link="http://news.qq.com/a/20160312/043681.htm" data-click="LOG_LINK" class="s-yahei"> 甘肃男子酒后驾车撞死3名中学生 已被警方控制</a><a href="javascript:;" class="del"></a></h2>
+												<div class="from"><span class="src-net"><a href="http://news.qq.com" target="_blank" data-src="1" data-click="LOG_LINK">腾讯新闻</a></span><span class="src-time">03-12 19:24</span> </div>
+												<div class="dustbin" data-click="LOG_BTN_DUSTBIN"> </div>
+											</div>
+											<div class="s-news-item s-news-item-tpl-3 s-opacity-blank8" data-rid="17323933878349072488" data-relatewords="1" data-log="stype:0;picNum:0;">
+												<h2>  <span class="status prefix-0"></span> <a href="http://news.ifeng.com/a/20160313/47821026_0.shtml" title="叙利亚政府军一架战机被击落" target="_blank" data-title="叙利亚政府军一架战机被击落" data-link="http://news.ifeng.com/a/20160313/47821026_0.shtml" data-click="LOG_LINK" class="s-yahei"> 叙利亚政府军一架战机被击落</a><a href="javascript:;" class="del"></a></h2>
+												<div class="from"><span class="src-net"><a href="http://news.ifeng.com" target="_blank" data-src="1" data-click="LOG_LINK">凤凰网</a></span><span class="src-time">03-13 06:14</span> </div>
+												<div class="dustbin" data-click="LOG_BTN_DUSTBIN"> </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="display: none;" id="s_content_1" data-id="1" class="s-content" style="">
+							<div data-curtab="" id="s_xmancard_nav" data-logactid="page-card-tpl-nav" class="s-xmancard-nav s-xmancard">
+								<div class="nav-block-wrapper fanli-patern">
+									<div class="water-container">
+										<div class="s-nav-wrapper s-nav-personal">
+											<div class="s-nav-area">
+												<div class="clearfix" data-dir="personal">
+													<h1>猜你喜欢</h1>
+													<div class="fanli-nav nav-item " data-rid="5991794" data-log="stype:-1;pos:0;dir:personal;ncols:6;" data-extra="-1">
+														<a href="http://www.nuomi.com/?vip_frm=super_nav_vip" title="百度糯米" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="http://vip.baidu.com/cps/show/goto?mallid=112&amp;product_id=0&amp;disable_goto_flag=0&amp;url=5f47q2%252BPEaGZWOKc5AnJBM9P3LzCVEnJGAhJ%252BUp7YRw2RX4V00ZN1Tg7y00g3Z75ptw&amp;sharekey=&amp;statkey=zw_super_m_112&amp;vip_frm=super_mynav"
+														data-pos="0"><img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/9483.png?1"><span class="nav-txt">百度糯米</span></a>
+														<div class="top-line"></div>
+														<div class="rebate"><a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" target="_blank">最高返利3.54%</a></div>
+														<div class="fanli-tag">
+															<a href="http://vip.baidu.com/m_112?vip_frm=super_mynav_mall" target="_blank"></a>
+														</div>
+													</div>
+													<div class="fanli-nav nav-item " data-rid="3825400" data-log="stype:-1;pos:1;dir:personal;ncols:6;" data-extra="-1">
+														<a href="http://www.jd.com/?vip_frm=super_nav_vip" title="京东商城" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="http://vip.baidu.com/cps/show/goto?mallid=101&amp;product_id=0&amp;disable_goto_flag=0&amp;url=f576t20cRjEWADeg51GXCbgCT0ReQSY2d6%252FRo1dfnyg8HOMs2lLgA2KkgK3pHg&amp;sharekey=&amp;statkey=zw_super_m_101&amp;vip_frm=super_mynav"
+														data-pos="1"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95541.png"><span class="nav-txt">京东商城</span></a>
+														<div class="top-line"></div>
+														<div class="rebate" style="display: none;"><a href="http://vip.baidu.com/m_101?vip_frm=super_mynav_mall" target="_blank">最高返利80.00%</a></div>
+														<div class="fanli-tag">
+															<a href="http://vip.baidu.com/m_101?vip_frm=super_mynav_mall" target="_blank"></a>
+														</div>
+													</div>
+													<div class="fanli-nav nav-item " data-rid="17914961" data-log="stype:-1;pos:2;dir:personal;ncols:6;" data-extra="-1">
+														<a href="http://www.yhd.com/?vip_frm=super_nav_vip" title="1号店" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="http://vip.baidu.com/cps/show/goto?mallid=102&amp;product_id=0&amp;disable_goto_flag=0&amp;url=f761ILk95oVp8j%252BvERi7i13YQP3%252Fimd0hHSG5pC3HqVQjUON83YM25bylx%252BWQaQ&amp;sharekey=&amp;statkey=zw_super_m_102&amp;vip_frm=super_mynav"
+														data-pos="2"><img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95780.png"><span class="nav-txt">1号店</span></a>
+														<div class="top-line"></div>
+														<div class="rebate"><a href="http://vip.baidu.com/m_102?vip_frm=super_mynav_mall" target="_blank">最高返利75.60%</a></div>
+														<div class="fanli-tag">
+															<a href="http://vip.baidu.com/m_102?vip_frm=super_mynav_mall" target="_blank"></a>
+														</div>
+													</div>
+													<div class="fanli-nav nav-item " data-rid="3172955" data-log="stype:-1;pos:3;dir:personal;ncols:6;" data-extra="-1">
+														<a href="http://www.suning.com/?vip_frm=super_nav_vip" title="苏宁易购" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="http://vip.baidu.com/cps/show/goto?mallid=150&amp;product_id=0&amp;disable_goto_flag=0&amp;url=0b3bNnglLmVPqZPMMCSWvqzKW9KQrkL5QVDfvKOVogqwq4HyGHfZfKBQBQRa%252FgaC06O1&amp;sharekey=&amp;statkey=zw_super_m_150&amp;vip_frm=super_mynav"
+														data-pos="3"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95537.png?99"><span class="nav-txt">苏宁易购</span></a>
+														<div class="top-line"></div>
+														<div class="rebate" style="display: none;"><a href="http://vip.baidu.com/m_150?vip_frm=super_mynav_mall" target="_blank">最高返利80.00%</a></div>
+														<div class="fanli-tag">
+															<a href="http://vip.baidu.com/m_150?vip_frm=super_mynav_mall" target="_blank"></a>
+														</div>
+													</div>
+													<div class="fanli-nav nav-item " data-rid="10563402" data-log="stype:-1;pos:4;dir:personal;ncols:6;" data-extra="-1">
+														<a href="http://www.vip.com/?vip_frm=super_nav_vip" title="唯品会" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="http://vip.baidu.com/cps/show/goto?mallid=104&amp;product_id=0&amp;disable_goto_flag=0&amp;url=93a2ZBVn2Zha0I3gVyobEaamoMyu2hArCg2eZujuEWqp%252Ba2O2oqPI26GzQ%252B42SzM&amp;sharekey=&amp;statkey=zw_super_m_104&amp;vip_frm=super_mynav"
+														data-pos="4"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95693.png"><span class="nav-txt">唯品会</span></a>
+														<div class="top-line"></div>
+														<div class="rebate" style="display: none;"><a href="http://vip.baidu.com/m_104?vip_frm=super_mynav_mall" target="_blank">最高返利7.00%</a></div>
+														<div class="fanli-tag">
+															<a href="http://vip.baidu.com/m_104?vip_frm=super_mynav_mall" target="_blank"></a>
+														</div>
+													</div>
+													<div class="fanli-nav nav-item " data-rid="7304613" data-log="stype:-1;pos:5;dir:personal;ncols:6;" data-extra="-1">
+														<a href="http://www.dangdang.com/?vip_frm=super_nav_vip" title="当当网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="http://vip.baidu.com/cps/show/goto?mallid=105&amp;product_id=0&amp;disable_goto_flag=0&amp;url=6b28hBrLIiT%252BiyygILKXmoRCeAXd5MT4NJ4D0ZuHmv3CAJCIBlmxDz5ZXPKwYEHUD6V%252F9VY&amp;sharekey=&amp;statkey=zw_super_m_105&amp;vip_frm=super_mynav"
+														data-pos="5"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95517.png"><span class="nav-txt">当当网</span></a>
+														<div class="top-line"></div>
+														<div class="rebate"><a href="http://vip.baidu.com/m_105?vip_frm=super_mynav_mall" target="_blank">最高返利75.00%</a></div>
+														<div class="fanli-tag">
+															<a href="http://vip.baidu.com/m_105?vip_frm=super_mynav_mall" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="13115621905880990046" data-log="stype:10;pos:6;dir:personal;ncols:6;" data-extra="62250">
+														<a href="http://www.jikexueyuan.com/" title="极客学院" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="6"><img src="https://ss2.bdstatic.com/lfoZeXSm1A5BphGlnYG/icon/200974.png"><span class="nav-txt">极客学院</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="3229106195213330068" data-log="stype:10;pos:7;dir:personal;ncols:6;" data-extra="21650">
+														<a href="http://www.taobao.com/" title="淘宝网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="7"><img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95487.png"><span class="nav-txt">淘宝网</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="14943774497850772111" data-log="stype:10;pos:8;dir:personal;ncols:6;" data-extra="11940">
+														<a href="http://www.gamersky.com/handbook/201204/197132.shtml" title="仙剑5隐藏剧情" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="8"><img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/8442.png"><span class="nav-txt">仙剑5隐藏剧情</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="15295723726406706133" data-log="stype:10;pos:9;dir:personal;ncols:6;" data-extra="11010">
+														<a href="http://www.w3school.com.cn/jquery/effect_animate.asp" title="jQuery 效果 - animate() 方法" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="9"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3"><span class="nav-txt">jQuery 效果 - animate() 方法</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="3183177873157961607" data-log="stype:2;pos:10;dir:personal;ncols:6;" data-extra="7140">
+														<a href="http://www.w3school.com.cn/jsref/jsref_tofixed.asp" title="tofixed" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="10"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3"><span class="nav-txt">tofixed</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="13685015006271153374" data-log="stype:2;pos:11;dir:personal;ncols:6;" data-extra="6190">
+														<a href="http://www.w3school.com.cn/cssref/pr_background-size.asp" title="CSS3 background-size 属性" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="11"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3"><span class="nav-txt">CSS3 background-size 属性</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="2238073783891525671" data-log="stype:10;pos:12;dir:personal;ncols:6;" data-extra="4580">
+														<a href="http://www.mtime.com/" title="Mtime时光网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="12"><img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95575.png"><span class="nav-txt">Mtime时光网</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="3841146905488680681" data-log="stype:10;pos:13;dir:personal;ncols:6;" data-extra="4580">
+														<a href="http://www.bootcss.com/" title="bootstrap" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="13"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3"><span class="nav-txt">bootstrap</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="3259417514632312511" data-log="stype:10;pos:14;dir:personal;ncols:6;" data-extra="4100">
+														<a href="http://www.neipin.com/" title="内聘网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="14"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3"><span class="nav-txt">内聘网</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="3825996773502031472" data-log="stype:10;pos:15;dir:personal;ncols:6;" data-extra="3230">
+														<a href="http://www.kanzhun.com/" title="看准网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="15"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/200440.png"><span class="nav-txt">看准网</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="18412035608093753876" data-log="stype:10;pos:16;dir:personal;ncols:6;" data-extra="2580">
+														<a href="http://uule.iteye.com/blog/1158829" title="关于Call和apply" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="16"><img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/8882.png"><span class="nav-txt">关于Call和apply</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="1075795870870760300" data-log="stype:10;pos:17;dir:personal;ncols:6;" data-extra="2210">
+														<a href="http://caniuse.com/" title="caniuse" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="17"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3"><span class="nav-txt">caniuse</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="15001486720791944766" data-log="stype:10;pos:18;dir:personal;ncols:6;" data-extra="2210">
+														<a href="http://www.gamersky.com/handbook/201107/176536.shtml" title="仙剑5攻略" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="18"><img src="https://ss2.bdstatic.com/kfoZeXSm1A5BphGlnYG/icon/8442.png"><span class="nav-txt">仙剑5攻略</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="2247283331982600748" data-log="stype:10;pos:19;dir:personal;ncols:6;" data-extra="1990">
+														<a href="http://www.xiami.com/" title="虾米音乐网" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="19"><img src="https://ss2.bdstatic.com/lfoZeXSm1A5BphGlnYG/icon/10406.png?1"><span class="nav-txt">虾米音乐网</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="3564100963687567444" data-log="stype:10;pos:20;dir:personal;ncols:6;" data-extra="1810">
+														<a href="http://www.mafengwo.cn/" title="蚂蜂窝" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="20"><img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/95691.png"><span class="nav-txt">蚂蜂窝</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="5314214574778528246" data-log="stype:2;pos:21;dir:personal;ncols:6;" data-extra="1739">
+														<a href="http://pal5.pp.cc/messages/201107/1735.html" title="仙剑5除妖任务" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="21"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3"><span class="nav-txt">仙剑5除妖任务</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="14214776" data-log="stype:-1;pos:22;dir:personal;ncols:6;" data-extra="-1">
+														<a href="http://vip.baidu.com/?vip_frm=super_nav_vip" title="百度VIP" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="22"><img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/7656.png"><span class="nav-txt">百度VIP</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+													<div class="nav-item " data-rid="42054184" data-log="stype:-1;pos:23;dir:personal;ncols:6;" data-extra="-1">
+														<a href="https://www.microsoft.com/zh-cn/store/apps/windows/" title="微软商店" class="nav-block" target="_blank" data-click="LOG_LINK" data-fanliurl="" data-pos="23"><img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/9321.png"><span class="nav-txt">微软商店</span></a>
+														<div class="top-line"></div>
+														<div class="fanli-tag">
+															<a href="" target="_blank"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="s-loading s-opacity-border4-top" style="display:none;border:none;"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/img/base/loading_72b1da62.gif">
+								<div class="load-text">内容加载中...</div>
+							</div>
+						</div>
+						<div style="display: none;" id="s_content_15" class="s-content" data-id="15" style="display: block;">
+							<div data-curtab="" id="s_xmancard_video" data-logactid="page-card-tpl-video" class="s-xmancard-video s-xmancard">
+								<div>
+									<div class="water-container">
+										<div class="s-video-wrapper s-overflow-video clearfix">
+											<div class="video-col clearfix">
+												<div data-rid="10188518725252889272" class="item-wrapper" data-subscribe="0" data-log="stype:0;videotype:long;">
+													<div class="video-item video-item-1">
+														<div class="v-pic v-pic-1 pic-hover">
+															<div class="nointerest buzz"></div>
+															<div class="dustbin" data-click="LOG_BTN_DUSTBIN"></div>
+															<a class="pic" href="http://www.hunantv.com/v/1/18/index.html" hidefocus="" target="_blank" title="天天向上" data-click="LOG_LINK"><img class="img" width="195px" height="267px" src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3483188741,1097192419&amp;fm=58">
+																<div class="img-layer-ie" title="天天向上"></div>
+															</a>
+															<div class="black"></div>
+															<a class="bg img-click" href="http://www.hunantv.com/v/1/18/index.html" target="_blank" data-id="10188518725252889272" data-stype="0" title="天天向上"></a><a class="img-click" href="http://www.hunantv.com/v/1/18/index.html" target="_blank" data-id="10188518725252889272" data-stype="0" title="天天向上"><span class="v-tag">03-11期</span></a>
+															<a href="http://www.hunantv.com/v/1/18/index.html" target="_blank" class="img-click tag-sort tag-sort2"></a>
+														</div>
+														<div class="v-txt s-opacity-background1 s-opacity-blank3">
+															<div class="text"><a class="s-opacity-blank3" href="http://www.hunantv.com/v/1/18/index.html" hidefocus="" target="_blank" title="天天向上" data-click="LOG_LINK">天天向上</a></div>
+															<div class="score"><span class="score-star"><span class="star-active" style="width:52px"></span></span>8.0</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="video-col clearfix">
+												<div data-rid="14674865264088300922" class="item-wrapper" data-subscribe="0" data-log="stype:0;videotype:long;">
+													<div class="video-item video-item-1">
+														<div class="v-pic v-pic-1 pic-hover">
+															<div class="nointerest buzz"></div>
+															<div class="dustbin" data-click="LOG_BTN_DUSTBIN"></div>
+															<a class="pic" href="http://www.hunantv.com/v/1/1/index.html" hidefocus="" target="_blank" title="快乐大本营" data-click="LOG_LINK"><img class="img" width="195px" height="267px" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3435304158,1227548247&amp;fm=58">
+																<div class="img-layer-ie" title="快乐大本营"></div>
+															</a>
+															<div class="black"></div>
+															<a class="bg img-click" href="http://www.hunantv.com/v/1/1/index.html" target="_blank" data-id="14674865264088300922" data-stype="0" title="快乐大本营"></a><a class="img-click" href="http://www.hunantv.com/v/1/1/index.html" target="_blank" data-id="14674865264088300922" data-stype="0" title="快乐大本营"><span class="v-tag">03-12期</span></a>
+															<a href="http://www.hunantv.com/v/1/1/index.html" target="_blank" class="img-click tag-sort tag-sort2"></a>
+														</div>
+														<div class="v-txt s-opacity-background1 s-opacity-blank3">
+															<div class="text"><a class="s-opacity-blank3" href="http://www.hunantv.com/v/1/1/index.html" hidefocus="" target="_blank" title="快乐大本营" data-click="LOG_LINK">快乐大本营</a></div>
+															<div class="score"><span class="score-star"><span class="star-active" style="width:43.55px"></span></span>6.7</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="video-col clearfix">
+												<div data-rid="8875335080141676566" class="item-wrapper" data-subscribe="0" data-log="stype:4;videotype:short;">
+													<div class="video-item video-item-2">
+														<div class="v-pic v-pic-2 pic-hover">
+															<div class="nointerest buzz"></div>
+															<div class="dustbin" data-click="LOG_BTN_DUSTBIN"></div>
+															<a class="pic" href="http://www.iqiyi.com/v_19rrkupevc.html?vfm=f_109_bdxs" hidefocus="" target="_blank" title="台中监狱：陈水扁若出席520典礼 即可入狱服刑" data-click="LOG_LINK"><img class="img" width="195px" height="101px" src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=339624775,2057659818&amp;fm=58">
+																<div class="img-layer-ie" title="台中监狱：陈水扁若出席520典礼 即可入狱服刑"></div>
+															</a>
+															<div class="black"></div>
+															<a class="bg img-click" href="http://www.iqiyi.com/v_19rrkupevc.html?vfm=f_109_bdxs" target="_blank" data-id="8875335080141676566" data-stype="4" title="台中监狱：陈水扁若出席520典礼 即可入狱服刑"></a><a class="img-click" href="http://www.iqiyi.com/v_19rrkupevc.html?vfm=f_109_bdxs" target="_blank" data-id="8875335080141676566" data-stype="4" title="台中监狱：陈水扁若出席520典礼 即可入狱服刑"><span class="v-tag">00:26</span></a></div>
+														<div class="v-txt s-opacity-background1 s-opacity-blank3">
+															<div class="text"><a class="s-opacity-blank3" href="http://www.iqiyi.com/v_19rrkupevc.html?vfm=f_109_bdxs" hidefocus="" target="_blank" title="台中监狱：陈水扁若出席520典礼 即可入狱服刑" data-click="LOG_LINK">台中监狱：陈水扁若出席520典礼 即可入狱服刑</a></div>
+														</div>
+													</div>
+												</div>
+												<div data-rid="2418116804217047670" class="item-wrapper" data-subscribe="0" data-log="stype:4;videotype:short;">
+													<div class="video-item video-item-2">
+														<div class="v-pic v-pic-2 pic-hover">
+															<div class="nointerest buzz"></div>
+															<div class="dustbin" data-click="LOG_BTN_DUSTBIN"></div>
+															<a class="pic" href="http://www.iqiyi.com/v_19rrkur41k.html?vfm=f_109_bdxs" hidefocus="" target="_blank" title="刺激！翼装飞行者两千米高空挑战拉美第一高楼" data-click="LOG_LINK"><img class="img" width="195px" height="101px" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=232609563,2031583122&amp;fm=58">
+																<div class="img-layer-ie" title="刺激！翼装飞行者两千米高空挑战拉美第一高楼"></div>
+															</a>
+															<div class="black"></div>
+															<a class="bg img-click" href="http://www.iqiyi.com/v_19rrkur41k.html?vfm=f_109_bdxs" target="_blank" data-id="2418116804217047670" data-stype="4" title="刺激！翼装飞行者两千米高空挑战拉美第一高楼"></a><a class="img-click" href="http://www.iqiyi.com/v_19rrkur41k.html?vfm=f_109_bdxs" target="_blank" data-id="2418116804217047670" data-stype="4" title="刺激！翼装飞行者两千米高空挑战拉美第一高楼"><span class="v-tag">00:59</span></a></div>
+														<div class="v-txt s-opacity-background1 s-opacity-blank3">
+															<div class="text"><a class="s-opacity-blank3" href="http://www.iqiyi.com/v_19rrkur41k.html?vfm=f_109_bdxs" hidefocus="" target="_blank" title="刺激！翼装飞行者两千米高空挑战拉美第一高楼" data-click="LOG_LINK">刺激！翼装飞行者两千米高空挑战拉美第一高楼</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="video-col clearfix">
+												<div data-rid="10069933572931643823" class="item-wrapper" data-subscribe="0" data-log="stype:4;videotype:short;">
+													<div class="video-item video-item-2">
+														<div class="v-pic v-pic-2 pic-hover">
+															<div class="nointerest buzz"></div>
+															<div class="dustbin" data-click="LOG_BTN_DUSTBIN"></div>
+															<a class="pic" href="http://www.iqiyi.com/v_19rrkuiuz8.html?vfm=f_109_bdxs" hidefocus="" target="_blank" title="三星S7 Edge 国行上手体验" data-click="LOG_LINK"><img class="img" width="195px" height="101px" src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3097878521,195021672&amp;fm=58">
+																<div class="img-layer-ie" title="三星S7 Edge 国行上手体验"></div>
+															</a>
+															<div class="black"></div>
+															<a class="bg img-click" href="http://www.iqiyi.com/v_19rrkuiuz8.html?vfm=f_109_bdxs" target="_blank" data-id="10069933572931643823" data-stype="4" title="三星S7 Edge 国行上手体验"></a><a class="img-click" href="http://www.iqiyi.com/v_19rrkuiuz8.html?vfm=f_109_bdxs" target="_blank" data-id="10069933572931643823" data-stype="4" title="三星S7 Edge 国行上手体验"><span class="v-tag">03:20</span></a></div>
+														<div class="v-txt s-opacity-background1 s-opacity-blank3">
+															<div class="text"><a class="s-opacity-blank3" href="http://www.iqiyi.com/v_19rrkuiuz8.html?vfm=f_109_bdxs" hidefocus="" target="_blank" title="三星S7 Edge 国行上手体验" data-click="LOG_LINK">三星S7 Edge 国行上手体验</a></div>
+														</div>
+													</div>
+												</div>
+												<div data-rid="10227495281808942501" class="item-wrapper" data-subscribe="0" data-log="stype:4;videotype:short;">
+													<div class="video-item video-item-2">
+														<div class="v-pic v-pic-2 pic-hover">
+															<div class="nointerest buzz"></div>
+															<div class="dustbin" data-click="LOG_BTN_DUSTBIN"></div>
+															<a class="pic" href="http://www.iqiyi.com/v_19rrkupywk.html?vfm=f_109_bdxs" hidefocus="" target="_blank" title="天伦 第25集预告" data-click="LOG_LINK"><img class="img" width="195px" height="101px" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1189983699,3264742592&amp;fm=58">
+																<div class="img-layer-ie" title="天伦 第25集预告"></div>
+															</a>
+															<div class="black"></div>
+															<a class="bg img-click" href="http://www.iqiyi.com/v_19rrkupywk.html?vfm=f_109_bdxs" target="_blank" data-id="10227495281808942501" data-stype="4" title="天伦 第25集预告"></a><a class="img-click" href="http://www.iqiyi.com/v_19rrkupywk.html?vfm=f_109_bdxs" target="_blank" data-id="10227495281808942501" data-stype="4" title="天伦 第25集预告"><span class="v-tag">03:37</span></a></div>
+														<div class="v-txt s-opacity-background1 s-opacity-blank3">
+															<div class="text"><a class="s-opacity-blank3" href="http://www.iqiyi.com/v_19rrkupywk.html?vfm=f_109_bdxs" hidefocus="" target="_blank" title="天伦 第25集预告" data-click="LOG_LINK">天伦 第25集预告</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="video-col-line s-opacity-border4-top"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="s-loading s-opacity-border4-top" style="display:none;border:none;"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/img/base/loading_72b1da62.gif">
+								<div class="load-text">内容加载中...</div>
+							</div>
+						</div>
+						<div style="display: none;" id="s_content_5" data-id="5" class="s-content" style="display: block;" data-waterpara="offset=1;childId=1_1;">
+							<div data-curtab="1_1" id="s_xmancard_shopping" data-logactid="page-card-tpl-shopping" class="s-xmancard-shopping s-xmancard">
+								<div class="s-shopping-wrapper hasTab clearfix">
+									<div class="shopping-card-wrapper clearfix">
+										<div class="shopping-card-item" data-rid="">
+											<div class="shopping-card-imgwrapper">
+												<a class="img" href="http://vip.baidu.com/p_26661?=&amp;vip_frm=mhd_gouwu_xq" target="_blank" data-click="LOG_LINK"><img src="https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/e61190ef76c6a7ef4b789d60fafaaf51f3de661d.jpg">
+													<div class="mask top"><span class="bsTitle">炊大皇实木切菜板</span></div>
+													<div class="cover"></div>
+													<div class="cover right"></div>
+													<div class="mask"><span class="bsTitle">百度返现</span><span class="percentdesc">71%</span></div>
+												</a>
+											</div>
+										</div>
+										<div class="shopping-card-item" data-rid="">
+											<div class="shopping-card-imgwrapper">
+												<a class="img" href="http://vip.baidu.com/p_26659?=&amp;vip_frm=mhd_gouwu_xq" target="_blank" data-click="LOG_LINK"><img src="https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/super/pic/item/35a85edf8db1cb13d1370955da54564e92584b1d.jpg">
+													<div class="mask top"><span class="bsTitle">瑞仕康儿童电动牙刷</span></div>
+													<div class="cover"></div>
+													<div class="cover right"></div>
+													<div class="mask"><span class="bsTitle">百度返现</span><span class="percentdesc">50%</span></div>
+												</a>
+											</div>
+										</div>
+										<div class="shopping-card-item" data-rid="">
+											<div class="shopping-card-imgwrapper">
+												<a class="img" href="http://vip.baidu.com/p_26361?=&amp;vip_frm=mhd_gouwu_xq" target="_blank" data-click="LOG_LINK"><img src="https://ss3.baidu.com/9fo3dSag_xI4khGko9WTAnF6hhy/super/pic/item/0824ab18972bd407ef8fe6bb7c899e510fb3092f.jpg">
+													<div class="mask top"><span class="bsTitle">RAX情侣户外冲锋衣</span></div>
+													<div class="cover"></div>
+													<div class="cover right"></div>
+													<div class="mask"><span class="bsTitle">百度返现</span><span class="percentdesc">22%</span></div>
+												</a>
+											</div>
+										</div>
+										<div class="shopping-card-item">
+											<a class="shopping-bsword s-opacity-blank8" href="http://vip.baidu.com/super_11?=&amp;vip_frm=mhd_gouwu_wzl" target="_blank">
+												<p>节后甩脂动起来</p><span>运动装备最高返现70%</span>
+												<div class="buttondesc">去看看</div>
+											</a>
+											<div class="shopping-bsmall">
+												<a target="_blank" class="fanmall" href="http://vip.baidu.com/mall?vip_frm=mhd_gouwu_sc">
+													<p>返利商城</p>
+												</a>
+												<ul>
+													<li data-index="0"><a href="http://vip.baidu.com/cps/show/goto?mallid=101&amp;product_id=0&amp;disable_goto_flag=0&amp;url=3756wY%252FAO2EvoxvnHOxxy3GCEOabSwZsM3Z1fvgNbvbJm%252FOSl%252BuQ1pzYdWUr8w&amp;sharekey=&amp;statkey=zw_mhdgouwusc_m_101&amp;vip_frm=mhd_gouwu_sc"
+														target="_blank">京东商城</a></li>
+													<li data-index="1"><a href="http://vip.baidu.com/cps/show/goto?mallid=112&amp;product_id=0&amp;disable_goto_flag=0&amp;url=7151bwvQkppeuH2wIrA4vpJCUFbWv9piViho3zAJtnVwttRhxw9MG%252FZqF6rwUXLDoDA&amp;sharekey=&amp;statkey=zw_mhdgouwusc_m_112&amp;vip_frm=mhd_gouwu_sc"
+														target="_blank">百度糯米</a></li>
+													<li data-index="2"><a href="http://vip.baidu.com/cps/show/goto?mallid=102&amp;product_id=0&amp;disable_goto_flag=0&amp;url=99e0vsb%252FWr6XwKOeOevn6E8ZtTO7hgnhxII2m0YFhegMKrvE9sqDJXIfo%252FBYNko&amp;sharekey=&amp;statkey=zw_mhdgouwusc_m_102&amp;vip_frm=mhd_gouwu_sc"
+														target="_blank">1号店</a></li>
+													<li data-index="3"><a href="http://vip.baidu.com/cps/show/goto?mallid=105&amp;product_id=0&amp;disable_goto_flag=0&amp;url=02e4c1flIY3rIjW2ZvETAnfGuW4eYso3h6e6Z0Pa0eaxgtXDPMMhAJLBMf1xP2NRsCy0l9c&amp;sharekey=&amp;statkey=zw_mhdgouwusc_m_105&amp;vip_frm=mhd_gouwu_sc"
+														target="_blank">当当网</a></li>
+													<li data-index="4"><a href="http://vip.baidu.com/cps/show/goto?mallid=151&amp;product_id=0&amp;disable_goto_flag=0&amp;url=99afsidMKtNcbBH%252BAfhNs2go5ThWK3OupfcZXg8NVMjwD%252BExLmKr7SMCt0ZsjbRB4KJQzQ&amp;sharekey=&amp;statkey=zw_mhdgouwusc_m_151&amp;vip_frm=mhd_gouwu_sc"
+														target="_blank">蘑菇街</a></li>
+													<li data-index="5"><a href="http://vip.baidu.com/cps/show/goto?mallid=104&amp;product_id=0&amp;disable_goto_flag=0&amp;url=d22ct9rPY8LDleSXLmYI5Li7%252BopoUOPig4m%252BKSmdoZX1kv%252BiRkV7HolHlgfwgSy3&amp;sharekey=&amp;statkey=zw_mhdgouwusc_m_104&amp;vip_frm=mhd_gouwu_sc"
+														target="_blank">唯品会</a></li>
+													<li data-index="6"><a href="http://vip.baidu.com/cps/show/goto?mallid=478&amp;product_id=0&amp;disable_goto_flag=0&amp;url=3844nx0Tdlzxf%252F5VYioMblAUQJHHQdxmLlBU642O%252FvhQzwujr98Ancz8Zk63hZwgTWM&amp;sharekey=&amp;statkey=zw_mhdgouwusc_m_478&amp;vip_frm=mhd_gouwu_sc"
+														target="_blank">聚美优品</a></li>
+													<li data-index="7"><a href="http://s.click.taobao.com/t?e=m%3D2%26s%3DHB5mU5G%2BRAgcQipKwQzePCperVdZeJviEViQ0P1Vf2kguMN8XjClAmJkDPkG%2FdjAE6NybHI0aKBba5JcDTgiJNu9GNXBwzGwxvnXr2PDD5vDvBDdVSuDmqb6h%2BauVgdyCEDNGBpwx5jlSg55GVX5wbSqdkxH6LRFnaYpFBIfC%2F2orLd93QuCUMYOae24fhW0&amp;vip_frm=mhd_gouwu_sc"
+														target="_blank">聚划算</a></li>
+													<li data-index="8"><a href="http://chaoshi.tmall.com/activity/hub.htm?t=baiduvip2&amp;vip_frm=mhd_gouwu_sc" target="_blank">天猫超市</a></li>
+													<li data-index="9"><a class="last" href="http://vip.baidu.com/mall?=&amp;vip_frm=mhd_gouwu_sc" target="_blank">更多</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<ul class="card-tab-shopping">
+										<li class="tab-name-shopping tab_0 s-opacity-blank8 tab-name-cur taball" data-childid="1_1" data-rid=""><a class="chaoji">超级返</a>
+											<div class="arrow"></div>
+											<div class="wrap-subtab"><a target="_blank" class="tab-name-shopping sub  tab-name-cur " data-rid="" data-childid="1_1">全部</a><a target="_blank" class="tab-name-shopping sub " data-rid="" data-childid="1_2">食品酒水</a><a target="_blank" class="tab-name-shopping sub "
+												data-rid="" data-childid="1_3">数码家电</a><a target="_blank" class="tab-name-shopping sub " data-rid="" data-childid="1_10">百货</a><a target="_blank" class="tab-name-shopping sub " data-rid="" data-childid="1_11">运动户外</a><a target="_blank" class="tab-name-shopping sub "
+												data-rid="" data-childid="1_12">家居家纺</a><a target="_blank" class="tab-name-shopping lasttab" data-rid="" href="http://vip.baidu.com/super?vip_frm=mhd_gouwu_sp">更多</a></div>
+										</li>
+										<li class="tab-name-shopping tab_1 s-opacity-blank8" data-childid="0_default" data-rid=""><a>9块9</a></li>
+										<li class="tab-name-shopping tab_2 s-opacity-blank8" data-childid="2_default" data-rid=""><a>糯米团购</a> </li>
+									</ul>
+									<div class="sp-line s-opacity-blank8 "></div>
+									<div class="tab-content-wrap">
+										<div class="water-container tab-content" data-childid="1_1" data-load="loaded" style="display: block;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="s-loading s-opacity-border4-top" style="display:none;border:none;"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/img/base/loading_72b1da62.gif">
+								<div class="load-text">内容加载中...</div>
+							</div>
+						</div>
+					</div>
+					<div id="s_top_feed" class="top-feed">
+						<div class="to-top">
+							<div class="icon-mask">
+								<div class="text"> 回到顶部 </div>
+							</div>
+							<span class="icon"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--pc端脚部-->
+			<footer>
+				<div class="footer_wrap">
+					<div id="qrcode">
+						<div class="qrcode-item qrcode-item-1">
+							<div class="qrcode-img"></div>
+							<div class="qrcode-text">
+								<p><b>手机百度</b></p>
+								<p><span>快人一步</span></p>
+							</div>
+						</div>
+						<div class="qrcode-item qrcode-item-2">
+							<div class="qrcode-img"></div>
+							<div class="qrcode-text">
+								<p><b>百度糯米</b></p>
+								<p><span>一元大餐</span></p>
+							</div>
+						</div>
+					</div>
+					<div id="ftConw">
+						<p id="lh"><a id="seth">把百度设为主页</a><a href="http://home.baidu.com">关于百度</a><a href="http://ir.baidu.com">About&nbsp;&nbsp;Baidu</a></p>
+						<p id="cp">©2016&nbsp;Baidu&nbsp;<a href="http://www.baidu.com/duty/">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com/" class="cp-feedback">意见反馈</a>&nbsp;京ICP证030173号&nbsp;
+							<i class="c-icon-icrlogo"></i>
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="js/task7.1.js"></script>
+	</body>
+
+</html>

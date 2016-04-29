@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>计算器</title>
+		<link rel="stylesheet" type="text/css" href="css/task6.1.css" />
+	</head>
+
+	<body>
+		<div class="calculator_container">
+			<!--显示区-->
+			<div class="calculator_top">
+				<div class="input_box">
+					<input type="text" readonly="readonly" id="resultIpt" value="0" />
+				</div>
+			</div>
+			<!--操作区-->
+			<table class="calculator_table" align="center" border="0" cellpadding="0" cellspacing="0">
+				<tbody id="operate_area">
+					<tr>
+						<td>
+							<input value="清空" id="clearAll" class="btnCommonCss" _type="clear" type="button" />
+						</td>
+						<td>
+							<input value="sin" class="btnCommonCss baseBtnCss2" _type="sin/cos" type="button" />
+						</td>
+						<td>
+							<input value="cos" class="btnCommonCss baseBtnCss2" _type="sin/cos" type="button" />
+						</td>
+						<td>
+							<input value="/" class="btnCommonCss baseBtnCss2" _type="op" type="button" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input value="7" class="btnCommonCss baseBtnCss3" _type="num" type="button" />
+						</td>
+						<td>
+							<input value="8" class="btnCommonCss baseBtnCss3" _type="num" type="button" />
+						</td>
+						<td>
+							<input value="9" class="btnCommonCss baseBtnCss3" _type="num" type="button" />
+						</td>
+						<td>
+							<input value="*" class="btnCommonCss baseBtnCss2" _type="op" type="button" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input value="4" class="btnCommonCss baseBtnCss3" _type="num" type="button" />
+						</td>
+						<td>
+							<input value="5" class="btnCommonCss baseBtnCss3" _type="num" type="button" />
+						</td>
+						<td>
+							<input value="6" class="btnCommonCss baseBtnCss3" _type="num" type="button" />
+						</td>
+						<td>
+							<input value="-" class="btnCommonCss baseBtnCss2" _type="op" type="button" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input value="1" class="btnCommonCss baseBtnCss3" _type="num" type="button" />
+						</td>
+						<td>
+							<input value="2" class="btnCommonCss baseBtnCss3" _type="num" type="button" />
+						</td>
+						<td>
+							<input value="3" class="btnCommonCss baseBtnCss3" _type="num" type="button" />
+						</td>
+						<td>
+							<input value="+" class="btnCommonCss baseBtnCss2" _type="op" type="button" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input value="0" class="btnCommonCss baseBtnCss3" _type="num" type="button" />
+						</td>
+						<td>
+							<input value="." class="btnCommonCss baseBtnCss3" _type="." type="button" />
+						</td>
+						<td>
+							<input value="+/-" class="btnCommonCss baseBtnCss3" _type="+/-" type="button" />
+						</td>
+						<td>
+							<input value="=" class="btnCommonCss baseBtnCss2" _type="equal" type="button" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script type="text/javascript" src="js/task6.1.js"></script>
+	</body>
+
+</html>
