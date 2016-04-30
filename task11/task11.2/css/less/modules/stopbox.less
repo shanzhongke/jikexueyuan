@@ -1,0 +1,78 @@
+//公交站牌模块
+.stopbox {
+    height: 150px;
+    width: 480px;
+    background-color: white;
+    margin-bottom: 8px;
+    border: 1px solid #e3e3e3;
+    //left
+    &-left {
+        float: left;
+        width: 100px;
+        height: 150px;
+        &__busNum {
+            text-align: center;
+            font-size: 60px;
+            line-height: 100px;
+            height: 100px;
+            color: red;
+            background-color: aqua;
+        }
+        &__nextStop {
+            text-align: center;
+        }
+    }
+    //right
+    &-right {
+        float: right;
+        height: 150px;
+        width: 380px;
+        &__destination {
+            height: 40px;
+        }
+        &__list {
+            height: 110px;
+            background-color: antiquewhite;
+            li {
+                vertical-align: center;
+                float: left; 
+                font-size: 16px;
+                line-height: 20px;
+                width: 16px;
+            }
+        }
+    }
+}
+//info
+.destination--info {
+    line-height: 1.4;
+    text-align: center;
+    strong {
+        font-size: 20px;
+    }
+}
+//arrow
+@directionHeight: 10px;
+@directionWidth: 210px;
+.destination--direction {
+    margin-top: -5px;
+    line-height: 1;
+    text-align: center;
+    &:before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: -@directionHeight/3;
+        width: @directionWidth;
+        height: @directionHeight/3;
+        background-color: green;
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        border-top: @directionHeight/2 solid transparent;
+        border-left: @directionHeight*2 solid green;
+        border-right: 0 solid transparent;
+        border-bottom: @directionHeight/2 solid transparent;
+    }
+}
