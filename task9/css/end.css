@@ -1,0 +1,165 @@
+@import url("reset.css");
+body {
+	background-color: #e9ecf3;
+}
+
+header {
+	padding: 10px 0;
+	border-bottom: 1px solid #cf1736;
+	margin-bottom: 17px;
+	background-color: #fff;
+}
+
+.head-logo{
+	padding-left: 40px;
+	background-size: auto 100%;
+}
+
+.head-logo > span {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.head-nav,
+.user-status {
+	margin-top: 3px;
+	text-align: center;
+}
+
+.head-nav li:last-child,
+.user-status li:last-child{
+	margin-right: 0;
+}
+
+.user-status {
+	text-align: right;
+}
+
+.head-nav li,
+.user-status li {
+	margin-right: 5px;
+	color: #8192a1;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.head-nav-active {
+	color: #cf1736!important;
+}
+
+.user-status .remind {
+	display: inline-block;
+	width: 30px;
+	height: 15px;
+	line-height: 15px;
+	margin-left: 2px;
+	background-color: #fa5a48;
+	border-radius: 3px;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+
+/*左侧导航栏*/
+
+nav {
+	padding-bottom: 10px;
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+.nav-item > li {
+	padding: 7px 0;
+	margin-bottom: 5px;
+	color: #565656;
+	text-align: center;
+	cursor: pointer;
+}
+
+.nav-item #control {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.nav-item > li span {
+	margin: 0 13px;
+}
+
+.nav-item > li:hover,
+.nav-item > li.active {
+	color: #cf1736;
+	background-color: #fef1f3;
+}
+
+.breadcrumb {
+	background-color: #fff;
+}
+
+.breadcrumb a {
+	color: #cf1736;
+}
+
+.breadcrumb .active {
+	color: #818e96;
+}
+
+.table {
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+td,
+th {
+	text-align: center!important;
+}
+
+.table .option > li {
+	display: inline-block;
+	padding: 0 5px;
+	cursor: pointer;
+}
+
+li.create:before{
+	display: none;
+	content: "";
+}
+
+.layer_box{
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 20;
+	background-color: rgba(0,0,0,.6);
+}
+
+.layer{
+	width: 800px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 30%;
+}
+
+.form-group{
+	margin-bottom: 0;
+}
+
+@media (min-width: 768px){
+	.nav-item > li span{
+		margin: 0;
+	}
+}
+@media (max-width: 767px){
+	.head-logo > span{
+		font-size: 16px;
+	}
+	.head-logo img{
+		width: 20%;
+	}
+	.head-nav-wrap,
+	.nav-wrap{
+		display: none;
+	}
+}
